@@ -19,6 +19,8 @@
 
 # Learn more: http://github.com/javan/whenever
 
+job_type :rake, "cd :path && :environment_variable=:environment bin/rake :task --silent :output"
+
 
 every 2.minutes do
   rake "dnsimple:update"
